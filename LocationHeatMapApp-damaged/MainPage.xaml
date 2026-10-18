@@ -1,0 +1,60 @@
+﻿<?xml ver**on="1.0" encoding="utf-8" ?>
+
+<Co**entPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+  **xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="**cationHeatMapApp.MainPage"
+    Ti**e="Location Heat Map">
+
+    <Grid**       RowDefinitions="Auto,Auto,**to,*,Auto"
+        Padding="12"
+ ***    RowSpacing="10">
+
+        <L***l
+            Grid.Row="0"
+     ***    Text="Location Heat Map Trac***"
+            FontSize="24"
+    ***     FontAttributes="Bold"
+     ***    HorizontalOptions="Center"
+ ***        HorizontalTextAlignment=***nter" />
+
+        <Button
+      ***   Grid.Row="1"
+            x:Na***"SaveLocationButton"
+           ***xt="Save Current Location"
+     ***    Clicked="OnSaveLocationClick***
+            HorizontalOptions="***l"
+            BackgroundColor="***2BD4"
+            TextColor="Whi***
+            CornerRadius="8" />***       <Label
+            Grid.R***"2"
+            Text="Saved Loca***n Heat Map"
+            FontSize***7"
+            FontAttributes="B***"
+            HorizontalOptions=***nter"
+            HorizontalText***gnment="Center" />
+
+        <Bor***
+            Grid.Row="3"
+      ***   Stroke="#808080"
+            ***okeThickness="1"
+            Bac***oundColor="#F5F5F5"
+            ***ding="4"
+            HorizontalO***ons="Fill"
+            VerticalO***ons="Fill">
+
+            <Image
+***             Source="heatmap.png***               Aspect="AspectFit***               HorizontalOptions***ill"
+                VerticalOpt***s="Fill" />
+
+        </Border>
+
+***     <Label
+            Grid.Row***"
+            x:Name="StatusLabe***            Text="Select Save Cu***nt Location to begin tracking."
+***         FontSize="14"
+         ***TextColor="Gray"
+            Hor***ntalOptions="Center"
+           ***rizontalTextAlignment="Center" /***    </Grid>
+
+</ContentPage>
